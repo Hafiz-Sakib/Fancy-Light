@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fancy Lamp</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./images/lamp.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="hero">
+      <nav>
+        <img class="menu-img" src="images/menu.png" alt="" />
+        <img class="logo" src="images/logo.png" alt="" />
+        <ul>
+          <li class="list__items">
+            <a href="">Latest</a>
+            <a href="">Modern</a>
+            <a href="">Comtemporary</a>
+            <a href="">Affordable</a>
+          </li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="toggleBtn">
+          <span> </span>
+        </button>
+      </nav>
+
+      <div class="lamp-container">
+        <img class="lamp" src="images/lamp.png" alt="" />
+        <img class="light" id="light" src="images/light.png" alt="" />
+      </div>
+      <div class="text__container">
+        <h1>
+          Latest
+          <br />
+          in Lighting
+        </h1>
+        <p>
+          This is the first lamp from our Company.We're naking a huge collection
+          of moden lamps in all categories from home use to office use.
+        </p>
+        <a class="Check__Collections" href="/"> Check All Collections </a>
+        <div class="control">
+          <p>04</p>
+          <div class="line"><span class="control__span"></span></div>
+          <p>05</p>
+        </div>
+      </div>
+    </section>
+    <script>
+      let button = document.getElementById("toggleBtn");
+      function toggleBtn() {
+        button.classList.toggle("active");
+        light.classList.toggle("on");
+      }
+    </script>
+  </body>
+</html>
